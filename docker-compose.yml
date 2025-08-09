@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  turkish-airlines:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./Project/TurkishAirlines/src/java/airlines.accdb:/usr/local/tomcat/webapps/TurkishAirlines/WEB-INF/classes/airlines.accdb
