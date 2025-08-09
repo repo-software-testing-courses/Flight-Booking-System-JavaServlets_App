@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcat-users xmlns="http://tomcat.apache.org/xml"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
+              version="1">
+
+    <!-- Roles para a aplicação Turkish Airlines -->
+    <role rolename="Manager"/>
+    <role rolename="Admin"/>
+    <role rolename="Customer"/>
+
+    <!-- Usuários com suas respectivas roles -->
+    <user username="haris@admin.com" password="a" roles="Admin"/>
+    <user username="haris@manager.com" password="m" roles="Manager"/>
+    <user username="shariq@customer.com" password="c" roles="Customer"/>
+
+</tomcat-users>
